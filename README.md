@@ -2,7 +2,7 @@
 
 ## Setup
 
-* First of all, you need to have `chromedriver` in your path. you can get it from [here](https://chromedriver.chromium.org/downloads).
+* First of all, you need to have  the `chromedriver` executable in your path. you can get it from [here](https://chromedriver.chromium.org/downloads).
 
 * Then do ``` pip install selenium ``` to install the selenium package.
 
