@@ -9,6 +9,7 @@ add_postal = 'UB83FG'  # your zip code
 add_state = 'Middlesex'  # your county / town
 add_github = 'https://github.com/hesbadami'  # your github profile
 add_DBS = 'Yes'  # Yes, No -- do you have a valid DBS
+add_criminal = 'No'  # Yes, No -- do you have any criminal convictions
 add_valid_cert = 'Yes'  # Yes, No -- do you have a certificate
 add_university = 'Brunel University London'  # your university
 add_linkedin = 'https://www.linkedin.com/in/hessan-badami-830121200/'  # your linkedin profile
@@ -25,6 +26,7 @@ add_disability = 'No' # Yes, No, Decline -- disability status
 add_commute = 'Yes, I can commute' # Yes, No, Decline -- commute status
 add_commute2 = 'Yes'  # for some reason there are two types of commute questions
 add_shift = 'Day shift'  # Day shift, Night shift, Overnight shift -- your shift(s)
+add_available = 'Yes'  # Yes, No -- are you available to work the following hours
 default_unknown_multi = ''  # Yes, No -- default for unknown questions
 add_interview_dates = 'Immediately, Except for Wednesdays and Thursdays'  # dates you are available for interview
 

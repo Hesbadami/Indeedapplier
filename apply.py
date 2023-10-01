@@ -208,6 +208,7 @@ for p in range(num_pages):
                                 'authorized to work' in question_text.lower() or \
                                 'authorisation' in question_text.lower() or \
                                 'authorised' in question_text.lower() or \
+                                'right to work' in question_text.lower() or \
                                 'authorised to work' in question_text.lower():
                                 question.find_element(By.XPATH, f'//*[contains(text(), "{add_workauthorized}")]').click()
                                 
@@ -226,11 +227,17 @@ for p in range(num_pages):
                             elif 'shift' in question_text.lower() or 'travel' in question_text.lower():
                                 question.find_element(By.XPATH, f'//*[contains(text(), "{add_shift}")]').click()
                                 
+                            elif 'available to work the following hours' in question_text.lower() or 'travel' in question_text.lower():
+                                question.find_element(By.XPATH, f'//*[contains(text(), "{add_available}")]').click()
+                                
                             elif 'veteran' in question_text.lower() or 'disability' in question_text.lower():
                                 question.find_element(By.XPATH, f'//*[contains(text(), "{add_disability}")]').click()
                                 
                             elif 'DBS' in question_text.lower():
                                 question.find_element(By.XPATH, f'//*[contains(text(), "{add_DBS}")]').click()
+                                
+                            elif 'criminal' in question_text.lower():
+                                question.find_element(By.XPATH, f'//*[contains(text(), "{add_criminal}")]').click()
                                 
                             elif 'valid' in question_text.lower():
                                 question.find_element(By.XPATH, f'//*[contains(text(), "{add_valid_cert}")]').click()
