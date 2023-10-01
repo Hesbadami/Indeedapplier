@@ -202,7 +202,11 @@ for p in range(num_pages):
                             elif 'interview' in question_text.lower():
                                 question.find_element(By.CSS_SELECTOR, '[id^="input-q"]').send_keys(Keys.CONTROL, "a", Keys.DELETE)
                                 question.find_element(By.CSS_SELECTOR, '[id^="input-q"]').send_keys(add_interview_dates)
-
+                            
+                            elif 'available to work the following hours' in question_text.lower():
+                                question.find_element(By.CSS_SELECTOR, '[id^="input-q"]').send_keys(Keys.CONTROL, "a", Keys.DELETE)
+                                question.find_element(By.CSS_SELECTOR, '[id^="input-q"]').send_keys(add_available)
+                                
                             elif 'authorization' in question_text.lower() or \
                                 'authorized' in question_text.lower() or \
                                 'authorized to work' in question_text.lower() or \
@@ -226,9 +230,6 @@ for p in range(num_pages):
                                 
                             elif 'shift' in question_text.lower() or 'travel' in question_text.lower():
                                 question.find_element(By.XPATH, f'//*[contains(text(), "{add_shift}")]').click()
-                                
-                            elif 'available to work the following hours' in question_text.lower() or 'travel' in question_text.lower():
-                                question.find_element(By.XPATH, f'//*[contains(text(), "{add_available}")]').click()
                                 
                             elif 'veteran' in question_text.lower() or 'disability' in question_text.lower():
                                 question.find_element(By.XPATH, f'//*[contains(text(), "{add_disability}")]').click()
