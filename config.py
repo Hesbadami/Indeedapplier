@@ -1,9 +1,9 @@
-# wait time for page loading, increase this to 2 or 5 seconds if you have a slow internet connection
-load_delay = 0
+# wait time for page loading, increase this to like 5 seconds if you have a slow internet connection
+load_delay = 2
 
 # apply personal answers
-add_address = 'Isambard Complex, Brunel University London, Uxbridge'  # your address
-add_phone = '07736574002'  # your phone number
+add_address = 'My Address'  # your address
+add_phone = '0123456789'  # your phone number
 add_city = 'London'  # your city
 add_postal = 'UB83FG'  # your zip code
 add_state = 'Middlesex'  # your county / town

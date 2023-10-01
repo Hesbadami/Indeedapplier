@@ -79,7 +79,7 @@ for p in range(num_pages):
                             pass
                     
                 if title_again:
-                    question_title = ''
+                    questions_title = ''
                 
                 try:
                     questions_continue_btn = driver.find_element(By.CSS_SELECTOR, '.css-1gljdq7')
