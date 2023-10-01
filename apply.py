@@ -53,13 +53,7 @@ for p in range(num_pages):
                 driver.switch_to.window(windows[-1])
                 
                 # Questionnaire
-                
-                c = 0
-                while True:
-
-                    c += 1
-                    if c % 20 == 0:
-                        break
+                for i in range(10):  # increase this if you believe there are more than 10 pages of questionnaire
 
                     try:
                         applied_title = driver.find_element(By.CLASS_NAME, "ia-HasApplied-bodyTop").text.lower()
