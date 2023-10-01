@@ -4,13 +4,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.options import Options
 import time
-import json
 from personal_info import *
 
 options = Options()
 options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36")
 
 driver = webdriver.Chrome('chromedriver', options = options)
+driver.get("https://www.indeed.com/account/login")
 
 input("Press Enter when you have successfully logged in and searched for a job title:\n")
 
@@ -276,5 +276,3 @@ for p in range(num_pages):
 
     driver.find_element(By.XPATH, "//a[@data-testid='pagination-page-next']").click()
     time.sleep(load_delay)
-
-driver.find_element(By.CLASS_NAME, "ia-BasePage-heading").text

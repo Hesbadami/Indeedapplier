@@ -1,4 +1,4 @@
-# wait time for page loading, increase this to 1 or 2 seconds if you have a slow internet connection
+# wait time for page loading, increase this to 2 or 5 seconds if you have a slow internet connection
 load_delay = 0
 
 # apply personal answers
