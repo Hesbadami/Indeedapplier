@@ -54,7 +54,13 @@ for p in range(num_pages):
                 
                 # Questionnaire
                 
+                c = 0
                 while True:
+
+                    c += 1
+                    if c % 20 == 0:
+                        break
+
                     try:
                         applied_title = driver.find_element(By.CLASS_NAME, "ia-HasApplied-bodyTop").text.lower()
                         if "you've applied to this job" in applied_title:
@@ -238,7 +244,10 @@ for p in range(num_pages):
                                 question.find_element(By.XPATH, f'//*[contains(text(), "{add_DBS}")]').click()
                                 
                             elif 'criminal' in question_text.lower():
-                                question.find_element(By.XPATH, f'//*[contains(text(), "{add_criminal}")]').click()
+                                try:
+                                    question.find_element(By.XPATH, f'//*[contains(text(), "{add_criminal}")]').click()
+                                except:
+                                    question.find_elements(By.XPATH, f'//span[contains(text(), "{add_criminal}")]')[-1].click()
                                 
                             elif 'valid' in question_text.lower():
                                 question.find_element(By.XPATH, f'//*[contains(text(), "{add_valid_cert}")]').click()
