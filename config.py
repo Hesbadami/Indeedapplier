@@ -1,5 +1,5 @@
 # wait time for page loading, increase this to like 5 seconds if you have a slow internet connection
-load_delay = 2
+load_delay = 1.5
 
 # apply personal answers
 add_address = 'My Address'  # your address
@@ -23,7 +23,9 @@ add_gender = 'Male' # Male, Female, Decline
 add_veteran = 'No' # Yes, No, Decline -- veteran status
 add_disability = 'No' # Yes, No, Decline -- disability status
 add_commute = 'Yes, I can commute' # Yes, No, Decline -- commute status
-default_unknown_multi = 'No'  # Yes, No -- default for unknown questions
+add_commute2 = 'Yes'  # for some reason there are two types of commute questions
+add_shift = 'Day shift'  # Day shift, Night shift, Overnight shift -- your shift(s)
+default_unknown_multi = ''  # Yes, No -- default for unknown questions
 add_interview_dates = 'Immediately, Except for Wednesdays and Thursdays'  # dates you are available for interview
 
 # experience years
